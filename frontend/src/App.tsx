@@ -1,10 +1,14 @@
+import { BrowserRouter } from "react-router-dom"
+import { Router } from "./router"
+import { globalStyles } from "./styles/global";
+
 function App() {
 
+  globalStyles();
   return (
-    <>
-      <h1>Bem vindo!</h1>
-      <p>Crie seu orçamento de forma fácil e rápida, por aqui, sem precisar sair de casa!</p>
-    </>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   )
 }
 
